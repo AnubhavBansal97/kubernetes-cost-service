@@ -1,0 +1,46 @@
+info:
+  app:
+    name: Kubernetes Cost Service
+    description: Project FOR hackathon
+    version: 0.0.1
+
+server:
+  port: 6969
+
+spring:
+  application:
+    name: kubernetes-cost-service
+
+  flyway:
+    check-location: true
+    enabled: true
+    url: jdbc:postgresql://demo-postgres-beam.cnhkucgghpyx.us-west-2.rds.amazonaws.com:5432/kube_hackathon
+    user: ca_demo_v1
+    password: j000qm1nj@r
+
+  datasource:
+    url: jdbc:postgresql://demo-postgres-beam.cnhkucgghpyx.us-west-2.rds.amazonaws.com:5432/kube_hackathon
+    username: ca_demo_v1
+    password: j000qm1nj@r
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    platform: postgresql
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 1
+
+  jpa:
+    show-sql: false
+
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: true
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+        jdbc:
+          time_zone: UTC
+
+application:
+  app-env: DEV3

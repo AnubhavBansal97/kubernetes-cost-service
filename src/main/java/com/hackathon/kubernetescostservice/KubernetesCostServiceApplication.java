@@ -8,6 +8,7 @@ public class KubernetesCostServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(KubernetesCostServiceApplication.class, args);
+        System.out.println("Working");
     }
 
 }
