@@ -28,48 +28,52 @@ public class KubeEntity {
     @Type(type = "pg-uuid")
     private UUID podId;
 
-    @Column(name = "container_id",nullable = false)
+    @Column(name = "container_id")
     @Type(type = "pg-uuid")
     private UUID containerId;
 
-    @Column(name = "service_id",nullable = false)
+    @Column(name = "service_id")
     @Type(type = "pg-uuid")
     private UUID serviceId;
 
-    @Column(name = "namespace_id",nullable = false)
+    @Column(name = "namespace_id")
     @Type(type = "pg-uuid")
     private UUID namespaceId;
 
-    @Column(name = "cluster_id",nullable = false)
+    @Column(name = "cluster_id")
     @Type(type = "pg-uuid")
     private UUID clusterId;
+
+    @Column(name = "deployment_id")
+    @Type(type = "pg-uuid")
+    private UUID deploymentId;
 
     @Column(name = "provider",nullable = false)
     @Enumerated(EnumType.STRING)
     private CloudName provider;
 
-    @Column(name = "cpu_cost",nullable = false)
+    @Column(name = "cpu_cost")
     private Double cpuCost;
 
-    @Column(name = "memory_cost",nullable = false)
+    @Column(name = "memory_cost")
     private Double memoryCost;
 
-    @Column(name = "storage_cost",nullable = false)
+    @Column(name = "storage_cost")
     private Double storageCost;
 
-    @Column(name = "cpu_usage",nullable = false)
+    @Column(name = "cpu_usage")
     private Double cpuUsage;
 
-    @Column(name = "memory_usage",nullable = false)
+    @Column(name = "memory_usage")
     private Double memoryUsage;
 
-    @Column(name = "storage_usage",nullable = false)
+    @Column(name = "storage_usage")
     private Double storageUsage;
 
-    @Column(name = "start_time",nullable = false)
+    @Column(name = "start_time")
     private Timestamp startTime;
 
-    @Column(name = "end_time",nullable = false)
+    @Column(name = "end_time")
     private Timestamp endTime;
 
 }

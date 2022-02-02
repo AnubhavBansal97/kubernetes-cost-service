@@ -12,15 +12,17 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class KubeService {
 
-////    private final KubeDaoImpl kubeDao=
-//    public KubeSummaryResponse getSummary(){
-//        try {
-//
-//            return KubeSummaryResponse.builder()
-//                    .compute()
-//                    .build();
-//        } catch(Exception e){
-//            log.error("Unable to fetch dashboard summary", e);
-//        }
-//    }
+    private final KubeDaoImpl kubeDao;
+
+    public KubeSummaryResponse getSummary() throws  Exception{
+        try {
+
+            KubeSummaryResponse kubeSummaryResponse=this.kubeDao.getKubeSummary();
+            return kubeSummaryResponse;
+
+        } catch(Exception e){
+            log.error("Unable to fetch dashboard summary", e);
+            throw  e;
+        }
+    }
 }

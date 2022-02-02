@@ -11,9 +11,9 @@ import lombok.NoArgsConstructor;
 @Builder
 public class UtilCostResponse {
 
-    private Integer allocated;
+    private Double allocated;
 
-    private Integer utilized;
+    private Double utilized;
 
-    private Integer cost;
+    private Double cost;
 }
