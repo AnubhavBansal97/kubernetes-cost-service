@@ -52,13 +52,13 @@ public class KubeEntity {
     @Enumerated(EnumType.STRING)
     private CloudName provider;
 
-    @Column(name = "cpu_cost")
+    @Column(name = "cpu_usage_cost")
     private Double cpuCost;
 
-    @Column(name = "memory_cost")
+    @Column(name = "memory_usage_cost")
     private Double memoryCost;
 
-    @Column(name = "storage_cost")
+    @Column(name = "storage_usage_cost")
     private Double storageCost;
 
     @Column(name = "cpu_usage")
@@ -69,6 +69,15 @@ public class KubeEntity {
 
     @Column(name = "storage_usage")
     private Double storageUsage;
+
+    @Column(name = "cpu_total")
+    private Double cpuTotal;
+
+    @Column(name = "memory_total")
+    private Double memoryTotal;
+
+    @Column(name = "storage_total")
+    private Double storageTotal;
 
     @Column(name = "start_time")
     private Timestamp startTime;
