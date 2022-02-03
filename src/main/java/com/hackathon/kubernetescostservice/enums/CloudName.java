@@ -3,10 +3,10 @@ package com.hackathon.kubernetescostservice.enums;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum CloudName {
-    AWS("AWS"),
-    AZURE("AZURE"),
-    GCP("GCP"),
-    NX("NX");
+    AWS("aws"),
+    AZURE("azure"),
+    GCP("gcp"),
+    NX("nutanix");
 
     private String value;
 
