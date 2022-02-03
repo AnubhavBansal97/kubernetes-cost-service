@@ -24,29 +24,29 @@ public class KubeEntity {
     @Type(type = "pg-uuid")
     private UUID id;
 
-    @Column(name = "pod_id",nullable = false)
-    @Type(type = "pg-uuid")
-    private UUID podId;
+//    @Column(name = "pod_id",nullable = false)
+//    @Type(type = "pg-uuid")
+//    private UUID podId;
 
-    @Column(name = "container_id")
-    @Type(type = "pg-uuid")
-    private UUID containerId;
+//    @Column(name = "container_id")
+//    @Type(type = "pg-uuid")
+//    private UUID containerId;
+//
+//    @Column(name = "service_id")
+//    @Type(type = "pg-uuid")
+//    private UUID serviceId;
 
-    @Column(name = "service_id")
-    @Type(type = "pg-uuid")
-    private UUID serviceId;
-
-    @Column(name = "namespace_id")
-    @Type(type = "pg-uuid")
-    private UUID namespaceId;
+//    @Column(name = "namespace_id")
+//    @Type(type = "pg-uuid")
+//    private UUID namespaceId;
 
     @Column(name = "cluster_id")
     @Type(type = "pg-uuid")
     private UUID clusterId;
 
-    @Column(name = "deployment_id")
-    @Type(type = "pg-uuid")
-    private UUID deploymentId;
+//    @Column(name = "deployment_id")
+//    @Type(type = "pg-uuid")
+//    private UUID deploymentId;
 
     @Column(name = "provider",nullable = false)
     @Enumerated(EnumType.STRING)

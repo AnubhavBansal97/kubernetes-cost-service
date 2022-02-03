@@ -30,4 +30,6 @@ public class TopSpendResponse {
     private Double memoryTotal;
 
     private Double cpuTotal;
+
+    private Double total;
 }

@@ -94,7 +94,9 @@ public class KubeDaoImpl {
                 topSpendItem.setStorageUsage(kItem.getStorageUsageCost());
                 topSpendItem.setMemoryUsage(kItem.getMemoryUsageCost());
                 topSpendItem.setCpuUsage(kItem.getCpuUsageCost());
+                topSpendItem.setTotal(kItem.getTotal());
                 topSpendResponseList.add(topSpendItem);
+
             }
             return topSpendResponseList;
 
@@ -116,7 +118,7 @@ public class KubeDaoImpl {
                 topSpendItem.setStorageCost(kItem.getStorageCost());
                 topSpendItem.setMemoryCost(kItem.getMemoryCost());
                 topSpendItem.setCpuCost(kItem.getCpuCost());
-
+                topSpendItem.setTotal(kItem.getTotal());
                 topSpendResponseList.add(topSpendItem);
             }
             return topSpendResponseList;
